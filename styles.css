@@ -28,6 +28,16 @@ body {
 #main-container {
     background-color: var(--white);
     display: flex;
+    width: 60vw;
+    height: 50vh;
+    padding: 2rem;
+    border-radius: 20px;
+    max-width: 800px;
+    justify-content: space-between;
+}
+
+#calculation-container {
+    width: 48%;
 }
 
 .input-container {
@@ -35,16 +45,38 @@ body {
     flex-direction: column;
 }
 
+label {
+    color: var(--dark-grayish-cyan);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
 input {
     text-align: right;
+    background-color: var(--very-light-grayish-cyan);
+    border-width: 0px;
+    height: 2rem;
+    border-radius: 5px;
 }
 
 #tip-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+.percentage-button {
+    background-color: var(--very-dark-cyan);
+    color: var(--white);
+    font-weight: 600;
+    border-radius: 5px;
+    border-width: 0px;
 }
 
 #results-container {
     background-color: var(--very-dark-cyan);
+    width: 48%;
+    border-radius: 20px;
+    padding: 2rem 1rem;
 }
