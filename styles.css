@@ -105,4 +105,37 @@ button:hover {
     width: 48%;
     border-radius: 20px;
     padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.result-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.amount-label {
+    color: var(--white);
+    font-weight: 600;
+}
+
+.per-person-label {
+    color: var(--dark-grayish-cyan);
+    font-weight: 600;
+}
+
+.result-amount {
+    color: var(--strong-cyan);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+#reset-button {
+    background-color: var(--strong-cyan);
+    border-width: 0;
+    border-radius: 5px;
+    height: 2rem;
 }
