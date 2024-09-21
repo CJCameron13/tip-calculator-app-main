@@ -1,0 +1,7 @@
+const totalBill = document.querySelector('#bill')
+const partyNumber = document.querySelector('#number-of-people')
+const fivePercent = document.querySelector("#5%")
+const tenPercent = document.querySelector('#10%')
+const fifteenPercent = document.querySelector('#15%')
+const twentyPercent = document.querySelector('#20%')
+const fiftyPercent = document.querySelector('#50%')
