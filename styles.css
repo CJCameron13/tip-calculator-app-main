@@ -80,6 +80,11 @@ input {
     gap: 0.5rem;
 }
 
+#tip-grid .selected {
+    background-color: #9FE8DF;
+    color: var(--very-dark-cyan);
+}
+
 button:hover {
     cursor: pointer;
     background-color: #9FE8DF;
