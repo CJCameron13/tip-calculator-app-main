@@ -12,7 +12,19 @@ const tipPerPerson = document.querySelector('#tip-per-person')
 
 percentageButton.forEach((button) => {
     button.addEventListener('click', (event) => {
-        console.log(event.target)
-        console.log('targeted')
+        event.preventDefault()
+        percentageButton.forEach((otherButton) => {
+            if (otherButton != event.target) {
+                otherButton.classList.remove('selected')
+            }
+        })
+        let targeted = event.target
+        console.log(targeted)
+        targeted.classList.add('selected')
     })
+})
+
+totalBill.addEventListener('input', (event) => {
+    console.log(totalBill.value)
+    console.log(tipPerPerson.textContent)
 })
