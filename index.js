@@ -7,7 +7,7 @@ const twentyFivePercent = document.querySelector('#twenty-five-percent')
 const fiftyPercent = document.querySelector('#fifty-percent')
 const percentageButton = document.querySelectorAll('.percentage-button')
 
-const tipPerPerson = document.querySelector('#tip-per-person')
+let tipPerPerson = document.querySelector('#tip-per-person')
 
 
 percentageButton.forEach((button) => {
@@ -25,6 +25,10 @@ percentageButton.forEach((button) => {
 })
 
 totalBill.addEventListener('input', (event) => {
-    console.log(totalBill.value)
-    console.log(tipPerPerson.textContent)
+    let inputAmount = totalBill.value
+    console.log(inputAmount)
+    let tipChosen = document.querySelector('.selected')
+    console.log(tipChosen === fivePercent)
+    console.log(tipChosen)
+    tipPerPerson.textContent = `$${inputAmount}`
 })
