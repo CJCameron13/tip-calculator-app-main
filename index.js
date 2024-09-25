@@ -28,7 +28,19 @@ totalBill.addEventListener('input', (event) => {
     let inputAmount = totalBill.value
     console.log(inputAmount)
     let tipChosen = document.querySelector('.selected')
+
+    if (tipChosen === fivePercent) {
+        tipPerPerson.textContent = `$${inputAmount * 0.05 / partyNumber.value}`
+    } else if (tipChosen === tenPercent) {
+        tipPerPerson.textContent = `$${inputAmount * 0.1 / partyNumber.value}`
+    } else if (tipChosen === fifteenPercent) {
+        tipPerPerson.textContent = `$${inputAmount * 0.15 / partyNumber.value}`
+    } else if (tipChosen === twentyFivePercent) {
+        tipPerPerson.textContent = `$${inputAmount * 0.25 / partyNumber.value}`
+    } else if (tipChosen === fiftyPercent) {
+        tipPerPerson.textContent = `$${inputAmount * 0.5 / partyNumber.value}`
+    }
+
     console.log(tipChosen === fivePercent)
     console.log(tipChosen)
-    tipPerPerson.textContent = `$${inputAmount}`
 })
